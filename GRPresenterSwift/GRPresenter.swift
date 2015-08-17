@@ -16,19 +16,19 @@ class GRPresenter: UIView {
     *
     */
     func configureWithEntity(#entity:AnyObject) {
-    
+        
     }
     /**
     * @return an NSMutableDictionary representing the data of an entity;
     */
-    func dictionaryEntity() -> NSMutableDictionary {
-      return NSMutableDictionary();
+    func dictionaryEntity() -> Dictionary<String,AnyObject> {
+        return Dictionary<String,AnyObject>(minimumCapacity: 0);
     }
     /**
     * Should be called when you want to stop the loading of some UI elements (e.g : UIImage while
     * scrolling in UITableView)
     */
     func stopLoadingUI(){
-    
+        
     }
 }

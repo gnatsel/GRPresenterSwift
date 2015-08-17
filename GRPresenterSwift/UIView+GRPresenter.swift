@@ -14,7 +14,7 @@ import ObjectiveC
 var UIGRPresenter: UInt8 = 0
 
 extension UIView {
-    var presenter : GRPresenter? {
+    @IBOutlet var presenter : GRPresenter? {
         get {
             return objc_getAssociatedObject(self, &UIGRPresenter) as? GRPresenter
         }
